@@ -49,7 +49,7 @@ header {
     transition: all 0.3s ease;
     position: relative;
     transform: translateY(0);
-    text-shadow: 0px 5px 5px   rgba(3, 3, 2, 0.2);
+    text-shadow: 0px 5px 5px rgba(3, 3, 2, 0.2);
 }
 
 .nav-menu li a:hover {
@@ -58,10 +58,12 @@ header {
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 
 }
-.nav-menu li a.active{
+
+.nav-menu li a.active {
     font-weight: bold;
     color: #000;
 }
+
 .nav-menu li a.active::after {
     content: '';
     position: absolute;
@@ -163,6 +165,7 @@ header {
     color: white;
     border: none;
 }
+
 .search-box button:hover {
     background: #C1DCDC;
     color: #000;
@@ -251,10 +254,12 @@ header {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 .see-more-btn:hover {
     background-color: #2996f0;
-    color:  #ffffff;
+    color: #ffffff;
 }
+
 .plants-grid {
     display: flex;
     gap: 50px;
@@ -484,6 +489,7 @@ header {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 .explore-btn:hover {
     background-color: #000;
     color: #fff;
@@ -492,9 +498,11 @@ header {
 .category-item img {
     width: 90%;
     height: 600px;
-    object-fit: cover;
+    object-fit: contain;
+    background: #f8f8f8;
     display: block;
 }
+
 .testimonials {
     padding: 60px 0;
 }
@@ -520,16 +528,19 @@ header {
     max-width: 400px;
     justify-self: start;
 }
+
 .testimonials-wrapper {
     display: flex;
     align-items: center;
     gap: 20px;
 }
+
 .testimonials-slider {
     position: relative;
     width: 100%;
     height: auto;
 }
+
 .slide-btn-prev,
 .slide-btn-next {
     background-color: white;
@@ -591,35 +602,40 @@ header {
     height: 100px;
     object-fit: cover;
 }
-.author-info{
+
+.author-info {
     display: flex;
     flex-direction: column;
 }
+
 .author-info h4 {
     font-size: 18px;
     color: #1e1e1e;
     margin-bottom: 2px;
 }
-.author-info span{
+
+.author-info span {
     font-size: 12px;
     order: 2;
     color: #7d7d7d;
 }
 
-.rating{
+.rating {
     margin-left: auto;
 }
-.rating span{
+
+.rating span {
     font-weight: 600;
     color: #1e1e1e;
 }
 
-.testimonial-dots{
+.testimonial-dots {
     display: flex;
     justify-content: end;
     gap: 10px;
 }
-.dot{
+
+.dot {
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -627,9 +643,11 @@ header {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.dot.active{
+
+.dot.active {
     background-color: #2c5530;
 }
+
 .footer {
     background-color: #C1DCDC;
     padding: 60px 0 20px;
@@ -751,116 +769,188 @@ header {
     display: flex !important;
 }
 
-/* Tablet Responsive */
+@media screen and (max-width: 900px) and (min-width: 769px) and (orientation: portrait) {
+    .banner-content {
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .banner-left-largetext h1 {
+        font-size: 44px;
+    }
+
+    .search-container {
+        max-width: 250px;
+    }
+
+    .background-image {
+        width: 330px;
+        height: 280px;
+    }
+
+    .best-selling-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .best-selling-left {
+        order: 1;
+        max-width: 600px;
+    }
+
+    .best-selling-left h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .best-selling-left p {
+        text-align: center;
+    }
+
+    .best-selling-right {
+        order: 2;
+    }
+
+    .plants-grid {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .plant-card {
+        width: 200px;
+    }
+
+    .plant-card img {
+        height: 140px;
+    }
+
+    .categories-grid {
+        grid-template-columns: 250px 250px 250px;
+        gap: 15px;
+        padding: 40px;
+        justify-content: center;
+    }
+
+    .category-item img {
+        height: 150px;
+    }
+
+    .category-center {
+        margin-top: 30px;
+    }
+}
+
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-    /* Header Tablet */
     .navbar .container {
         gap: 60px;
     }
-    
-    /* Banner Tablet */
+
     .banner .container {
         padding: 20px;
     }
-    
+
     .banner-content {
         padding: 40px;
     }
-    
+
     .banner-left-largetext h1 {
         font-size: 48px;
     }
-    
+
     .background-image {
         width: 350px;
         height: 300px;
     }
-    
+
     /* Best Selling Tablet - Giữ layout ngang nhưng nhỏ lại */
     .best-selling .container {
         padding: 0 40px;
     }
-    
+
     .best-selling-content {
         gap: 40px;
     }
-    
+
     .best-selling-left h2 {
         font-size: 36px;
     }
-    
+
     .plants-grid {
         gap: 20px;
     }
-    
+
     .plant-card {
-        width: 180px;
+        width: 200px;
     }
-    
+
     .plant-card img {
         height: 150px;
     }
-    
+
     /* About Us Tablet */
     .about-header h2 {
         font-size: 36px;
     }
-    
+
     .features {
         gap: 30px;
     }
-    
+
     .feature-icon {
         width: 70px;
         height: 70px;
         font-size: 28px;
     }
-    
-    /* Categories Tablet - Giữ layout ngang nhưng nhỏ lại */
+
+
     .categories-grid {
         grid-template-columns: 280px 280px 280px;
         gap: 20px;
         padding: 40px;
     }
-    
+
     .category-item img {
         height: 200px;
+        object-fit: contain;
+        background: #f8f8f8;
     }
-    
+
     .category-center {
         margin-top: 60px;
     }
-    
+
     /* Testimonials Tablet */
     .testimonials .container {
         padding: 0 40px;
     }
-    
+
     .testimonials-header h2 {
         font-size: 36px;
     }
-    
+
     .testimonials-card {
         padding: 25px;
     }
-    
-    /* Footer Tablet */
+
+
     .footer .container {
         padding: 0 40px;
     }
-    
+
     .footer-links {
         gap: 30px;
     }
 }
 
-/* Mobile Responsive */
+
 @media screen and (max-width: 768px) {
-    /* Header Responsive */
     .navbar .container {
         gap: 20px;
     }
-    
+
     .nav-menu {
         display: none;
         position: absolute;
@@ -873,174 +963,190 @@ header {
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         z-index: 1000;
     }
-    
+
+    .nav-menu.mobile-open {
+        display: flex !important;
+    }
+
     .mobile-menu-toggle {
         display: block;
-        margin-left: auto;
+        cursor: pointer;
+        font-size: 24px;
     }
-    
+
     .nav-icons i:not(.bi-list) {
         display: none;
     }
-    
+
     .nav-icons {
         gap: 15px;
     }
-    
-    /* Banner Responsive */
+
     .banner .container {
         height: auto;
         padding: 20px;
     }
-    
+
     .banner-content {
         flex-direction: column;
         padding: 40px 20px;
         text-align: center;
     }
-    
+
     .banner-left-largetext {
         max-width: 100%;
         margin-bottom: 30px;
     }
-    
+
     .banner-left-largetext h1 {
         font-size: 36px;
     }
-    
+
     .banner-left-smalltext {
         justify-content: center;
         gap: 20px;
     }
-    
+
     .banner-right-image {
         position: static;
         margin-top: 20px;
+        display: flex;
+        justify-content: center;
     }
-    
+
     .background-image {
-        width: 250px;
-        height: 200px;
+        width: 280px;
+        height: 220px;
         margin: 0 auto;
     }
-    
+
     .best-selling .container {
         padding: 0 20px;
     }
-    
+
     .best-selling-content {
         flex-direction: column;
         gap: 30px;
         text-align: center;
         align-items: center;
     }
-    
+
     .best-selling-left {
         max-width: 100%;
     }
-    
+
     .best-selling-left h2 {
         font-size: 32px;
     }
-    
+
     .plants-grid {
         flex-direction: column;
         align-items: center;
         gap: 20px;
         width: 100%;
     }
-    
+
     .plant-card {
         width: 90%;
         max-width: 300px;
     }
-    
-    /* About Us Responsive */
+
+
     .about-us .container {
         padding: 0 20px;
     }
-    
+
     .about-header h2 {
         font-size: 32px;
     }
-    
+
     .features {
         grid-template-columns: 1fr;
         gap: 30px;
         max-width: 400px;
         margin: 0 auto;
     }
-    
+
     .feature-item {
         text-align: center;
     }
-    
+
     .feature-icon {
         width: 60px;
         height: 60px;
         font-size: 24px;
     }
-    
-    /* Categories Responsive */
+
     .categories-grid {
         grid-template-columns: 1fr;
         gap: 20px;
         padding: 40px 20px;
+        position: relative;
     }
-    
-    .category-center {
+
+    .category-item {
+        position: relative;
+        z-index: auto;
+        margin-bottom: 20px;
+    }
+
+    .category-left,
+    .category-center,
+    .category-right {
+        position: relative;
+        top: 0;
         margin-top: 0;
     }
-    
+
     .category-item img {
         height: 250px;
+        object-fit: contain;
+        background: #f8f8f8;
     }
-    
-    /* Testimonials Responsive */
+
     .testimonials-wrapper {
         flex-direction: column;
         gap: 15px;
     }
-    
+
     .testimonials-slider {
         width: 100%;
     }
-    
+
     .testimonials-card {
         padding: 20px;
         border-radius: 8px;
     }
-    
+
     .testimonials-header {
         flex-direction: column;
         gap: 20px;
         text-align: center;
     }
-    
+
     .testimonials-header h2 {
         font-size: 28px;
     }
-    
+
     .slide-btn-prev,
     .slide-btn-next {
         width: 40px;
         height: 40px;
         font-size: 16px;
     }
-    
-    /* Footer Responsive */
+
     .footer-content {
         flex-direction: column;
         gap: 30px;
         text-align: center;
     }
-    
+
     .footer-links {
         grid-template-columns: 1fr;
         gap: 25px;
         margin-left: 0;
     }
-    
+
     .social-icons {
         justify-content: center;
     }

@@ -45,22 +45,16 @@ function updateDots() {
     dots.forEach((dot, index) => {
         dot.classList.toggle('active', index === currentSlideIndex);
     });
-}function toggleMobileMenu() {
+}
+function toggleMobileMenu() {
     const navMenu = document.querySelector('.nav-menu');
-    navMenu.classList.toggle('mobile-open');
+    if (navMenu) {
+        navMenu.classList.toggle('mobile-open');
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
     showSlide(0);
-});
-
-
-function toggleMobileMenu() {
-    const navMenu = document.querySelector('.nav-menu');
-    navMenu.classList.toggle('mobile-open');
-}
-
-document.addEventListener('DOMContentLoaded', function() {
     const mobileToggle = document.querySelector('.mobile-menu-toggle');
     if (mobileToggle) {
         mobileToggle.addEventListener('click', toggleMobileMenu);
