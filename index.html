@@ -20,11 +20,15 @@
                     <li><a href="" class="active">Home</a></li>
                     <li><a href="">Products</a></li>
                     <li><a href="">Contact</a></li>
+                    <div class="mobile-nav-icons">
+                        <a href="cart.html"><i class="bi-cart"></i></a>
+                        <i class="bi-person"></i>
+                    </div>
                 </ul>
 
                 <div class="nav-icons text-end">
                     <a href="cart.html"><i class="bi-cart"></i></a>
-                    <i class="bi-person"></i> |
+                    <i class="bi-person"></i> 
                     <i class="bi-list mobile-menu-toggle"></i>
                 </div>
             </div>
@@ -95,9 +99,10 @@
                             <h3>Artificial Plants</h3>
                             <p class="price">₱ 3,500.00</p>
                             <button class="add-to-cart">
-                                <i class="bi-card-plus"></i>
+                                <i class="bi-cart-plus"></i>
                             </button>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -173,14 +178,9 @@
         <div class="container mb-5">
             <div class="testimonials-header">
                 <h2>What customers say about GREENMIND?</h2>
-
-                <div class="testimonial-dots text-end">
-                    <span class="dot active" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                </div>
             </div>
             <div class="testimonials-wrapper">
-            <button class="slide-btn-prev" onclick="prevSlide()"><</button>
+            <button class="slide-btn-prev"><</button>
             <div class="testimonials-slider">
                 
                 <div class="testimonials-content">
@@ -219,7 +219,11 @@
                 </div>
                 
             </div>
-            <button class="slide-btn-next" onclick="nextSlide()">></button>
+            <button class="slide-btn-next">></button>
+            </div>
+            <div class="testimonial-dots text-end">
+                <span class="dot active"></span>
+                <span class="dot"></span>
             </div>
     </section>
 
@@ -268,6 +272,9 @@
             </div>
         </div>
     </footer>
+    <button id="back-to-top" class="back-to-top">
+        <i class="bi-arrow-up"></i>
+    </button>
 </body>
 <script src="./assets/js/index.js"></script>
 

@@ -21,6 +21,10 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="">Products</a></li>
                     <li><a href="">Contact</a></li>
+                    <div class="mobile-nav-icons">
+                        <i class="bi-cart"></i>
+                        <i class="bi-person"></i>
+                    </div>
                 </ul>
 
                 <div class="nav-icons text-end">
@@ -50,16 +54,18 @@
                             <h4>Kaktus Plants</h4>
                             <p class="item-category">Indoor Plant</p>
                         </div>
-                        <div class="item-quantity">
-                            <button class="qty-btn minus">-</button>
-                            <span class="qty-number">2</span>
-                            <button class="qty-btn plus">+</button>
+                        <div class="item-quantity-total">
+                            <div class="item-quantity">
+                                <button class="qty-btn minus">-</button>
+                                <span class="qty-number">2</span>
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                            <div class="item-total">
+                                <span class="total">$170.00</span>
+                            </div>
                         </div>
-                        <div class="item-price">
+                        <div class="item-price" style="display: none;">
                             <span class="price">$85.00</span>
-                        </div>
-                        <div class="item-total">
-                            <span class="total">$170.00</span>
                         </div>
                         <div class="item-remove">
                             <button class="remove-btn"><i class="bi-trash"></i></button>
@@ -74,16 +80,18 @@
                             <h4>Landak Plants</h4>
                             <p class="item-category">Outdoor Plant</p>
                         </div>
-                        <div class="item-quantity">
-                            <button class="qty-btn minus">-</button>
-                            <span class="qty-number">1</span>
-                            <button class="qty-btn plus">+</button>
+                        <div class="item-quantity-total">
+                            <div class="item-quantity">
+                                <button class="qty-btn minus">-</button>
+                                <span class="qty-number">1</span>
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                            <div class="item-total">
+                                <span class="total">$105.00</span>
+                            </div>
                         </div>
-                        <div class="item-price">
+                        <div class="item-price" style="display: none;">
                             <span class="price">$105.00</span>
-                        </div>
-                        <div class="item-total">
-                            <span class="total">$105.00</span>
                         </div>
                         <div class="item-remove">
                             <button class="remove-btn"><i class="bi-trash"></i></button>
@@ -98,16 +106,18 @@
                             <h4>Kecubung Plants</h4>
                             <p class="item-category">Indoor Plant</p>
                         </div>
-                        <div class="item-quantity">
-                            <button class="qty-btn minus">-</button>
-                            <span class="qty-number">1</span>
-                            <button class="qty-btn plus">+</button>
+                        <div class="item-quantity-total">
+                            <div class="item-quantity">
+                                <button class="qty-btn minus">-</button>
+                                <span class="qty-number">1</span>
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                            <div class="item-total">
+                                <span class="total">$85.00</span>
+                            </div>
                         </div>
-                        <div class="item-price">
+                        <div class="item-price" style="display: none;">
                             <span class="price">$85.00</span>
-                        </div>
-                        <div class="item-total">
-                            <span class="total">$85.00</span>
                         </div>
                         <div class="item-remove">
                             <button class="remove-btn"><i class="bi-trash"></i></button>
@@ -115,8 +125,7 @@
                     </div>
                 </div>
 
-                <div class="checkout-section">
-                    <div class="payment-info">
+                <div class="payment-info">
                         <h3>Payment Information</h3>
                         
                         <div class="payment-method">
@@ -169,9 +178,9 @@
                                 </div>
                             </div>
                         </form>
-                    </div>
+                </div>
 
-                    <div class="order-summary">
+                <div class="order-summary">
                         <h3>Order Summary</h3>
                         <div class="summary-row">
                             <span>Subtotal:</span>
@@ -191,7 +200,6 @@
                         </div>
                         
                         <button type="submit" class="checkout-btn">Place Order</button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -243,5 +251,6 @@
         </div>
     </footer>
 </body>
+<script src="./assets/js/cart.js"></script>
 
 </html>
