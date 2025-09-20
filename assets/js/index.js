@@ -54,20 +54,10 @@ function updateDots() {
         dot.classList.toggle('active', index === currentSlideIndex);
     });
 }
-function toggleMobileMenu() {
-    const navMenu = document.querySelector('.nav-menu');
-    if (navMenu) {
-        navMenu.classList.toggle('mobile-open');
-    }
-}
 
 document.addEventListener('DOMContentLoaded', function() {
     showSlide(0);
     
-    const mobileToggle = document.querySelector('.mobile-menu-toggle');
-    if (mobileToggle) {
-        mobileToggle.addEventListener('click', toggleMobileMenu);
-    }
     const prevBtn = document.querySelector('.slide-btn-prev');
     const nextBtn = document.querySelector('.slide-btn-next');
     if (prevBtn) {
@@ -104,4 +94,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-
