@@ -40,9 +40,13 @@ header {
     max-width: 1440px;
     width: 100%;
 }
+
+.nav-toggle {
+    display: none;
+}
+
 .navbar .nav-icons {
     margin-left: auto;
-   
 }
 
 .logo {
@@ -1062,8 +1066,8 @@ header {
         z-index: 1000;
     }
 
-    .nav-menu.mobile-open {
-        display: flex !important;
+    #nav-toggle:checked ~ .nav-menu {
+        display: flex;
     }
 
     .mobile-menu-toggle {
@@ -1082,7 +1086,7 @@ header {
     }
     
     .mobile-nav-icons {
-        display: none;
+        display: flex;
         width: 100%;
         align-items: center;
         gap: 30px;
@@ -1092,8 +1096,8 @@ header {
         border-top: 1px solid #e0e0e0;
     }
     
-    .nav-menu.mobile-open .mobile-nav-icons {
-        display: flex !important;
+    #nav-toggle:checked ~ .nav-menu .mobile-nav-icons {
+        display: flex;
     }
     
     .mobile-nav-icons span,
