@@ -7,10 +7,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body, html {
-    overflow-x: hidden;
-    max-width: 100vw;
-}
 
 .container {
     width: 100%;
@@ -20,9 +16,11 @@ body, html {
 }
 
 header {
-    background-color: #ffffff;
+    position: sticky;
     top: 0;
-    max-width: 1440px;
+    z-index: 1000;
+    background-color: #ffffff;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -35,7 +33,6 @@ header {
     justify-content: flex-start;
     align-items: center;
     gap: 80px;
-    overflow-x: hidden;
     padding: 0;
     max-width: 1440px;
     width: 100%;
@@ -283,6 +280,28 @@ header {
 .see-more-btn:hover {
     background-color: #2996f0;
     color: #ffffff;
+}
+
+.plants-grid-slider {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+}
+
+.plants-group {
+    display: flex;
+    gap: 50px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: absolute;
+    width: 100%;
+}
+
+.plants-group.active {
+    opacity: 1;
+    transform: translateX(0);
+    position: relative;
 }
 
 .plants-grid {
@@ -578,7 +597,7 @@ header {
     left: 0;
     width: 100%;
     opacity: 0;
-    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transform: translateX(100%);
     z-index: 1;
 }
@@ -900,7 +919,8 @@ header {
         order: 2;
     }
 
-    .plants-grid {
+    .plants-grid,
+    .plants-group {
         gap: 15px;
         justify-content: center;
     }
@@ -983,7 +1003,8 @@ header {
         font-size: 36px;
     }
 
-    .plants-grid {
+    .plants-grid,
+    .plants-group {
         gap: 20px;
     }
 
@@ -1051,7 +1072,9 @@ header {
     
     .navbar .container {
         gap: 20px;
+        padding: 0 20px;
     }
+
 
     .nav-menu {
         display: none;
@@ -1116,12 +1139,12 @@ header {
 
     .banner .container {
         height: auto;
-        padding: 20px;
+        padding: 20px 20px 0 20px;
     }
 
     .banner-content {
         flex-direction: column;
-        padding: 40px 20px;
+        padding: 40px 20px 0 20px;
         text-align: center;
     }
 
@@ -1141,9 +1164,10 @@ header {
 
     .banner-right-image {
         position: static;
-        margin-top: 20px;
+        margin-bottom: 0;
         display: flex;
         justify-content: center;
+        margin: 0 auto;
     }
 
     .background-image {
@@ -1171,7 +1195,8 @@ header {
         font-size: 32px;
     }
 
-    .plants-grid {
+    .plants-grid,
+    .plants-group {
         flex-direction: column;
         align-items: center;
         gap: 20px;
@@ -1283,5 +1308,21 @@ header {
 
     .social-icons {
         justify-content: center;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 900px) and (min-width: 769px) and (orientation: portrait) {
+    header {
+        padding: 0 20px;
+    }
+    .banner-right-image {
+        bottom: 0;
+        right: 40px;
+    }
+    .banner .container {
+        padding-bottom: 0;
     }
 }

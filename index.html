@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GreenMind - Home</title>
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -15,8 +15,8 @@
                 <div class="logo">GREENMIND</div>
                 <input type="checkbox" id="nav-toggle" class="nav-toggle">
                 <ul class="nav-menu">
-                    <li><a href="" class="active">Home</a></li>
-                    <li><a href="">Products</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
                     <li><a href="">Contact</a></li>
                     <div class="mobile-nav-icons">
                         <a href="cart.html"><svg width="23" height="23" viewBox="0 0 23 23" fill="none"
@@ -102,83 +102,239 @@
                 <div class="best-selling-left">
                     <h2>Best Selling Plants</h2>
                     <p>Easiest way to healthy life by buying your favorite plants </p>
-                    <button class="see-more-btn">See More →</button>
+                    <button class="see-more-btn" onclick="window.location.href='products.html'">See More →</button>
                 </div>
                 <div class="best-selling-right">
-                    <div class="plants-grid">
-                        <div class="plant-card">
-                            <img src="assets/images/selling1.png" alt="Natural Plants">
-                            <h3>Natural Plants</h3>
-                            <p class="price">₱ 1,400.00</p>
-                            <button class="add-to-cart">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M11 27C11.5523 27 12 26.5523 12 26C12 25.4477 11.5523 25 11 25C10.4477 25 10 25.4477 10 26C10 26.5523 10.4477 27 11 27Z"
-                                        stroke="black" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M25 27C25.5523 27 26 26.5523 26 26C26 25.4477 25.5523 25 25 25C24.4477 25 24 25.4477 24 26C24 26.5523 24.4477 27 25 27Z"
-                                        stroke="black" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M3 5H7L10 22H26" stroke="black" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M10 16.666H25.59C25.7056 16.6661 25.8177 16.6261 25.9072 16.5528C25.9966 16.4795 26.0579 16.3775 26.0806 16.2641L27.8806 7.26414C27.8951 7.19157 27.8934 7.11668 27.8755 7.04487C27.8575 6.97307 27.8239 6.90614 27.7769 6.84891C27.73 6.79169 27.6709 6.7456 27.604 6.71397C27.5371 6.68234 27.464 6.66596 27.39 6.66602H8"
-                                        stroke="black" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
+                    <div class="plants-grid-slider">
+                        <!-- Group 1 -->
+                        <div class="plants-group active">
+                            <div class="plant-card">
+                                <img src="assets/images/selling1.png" alt="Natural Plants">
+                                <h3>Natural Plants</h3>
+                                <p class="price">₱ 1,400.00</p>
+                                <button class="add-to-cart">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11 27C11.5523 27 12 26.5523 12 26C12 25.4477 11.5523 25 11 25C10.4477 25 10 25.4477 10 26C10 26.5523 10.4477 27 11 27Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M25 27C25.5523 27 26 26.5523 26 26C26 25.4477 25.5523 25 25 25C24.4477 25 24 25.4477 24 26C24 26.5523 24.4477 27 25 27Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M3 5H7L10 22H26" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M10 16.666H25.59C25.7056 16.6661 25.8177 16.6261 25.9072 16.5528C25.9966 16.4795 26.0579 16.3775 26.0806 16.2641L27.8806 7.26414C27.8951 7.19157 27.8934 7.11668 27.8755 7.04487C27.8575 6.97307 27.8239 6.90614 27.7769 6.84891C27.73 6.79169 27.6709 6.7456 27.604 6.71397C27.5371 6.68234 27.464 6.66596 27.39 6.66602H8"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
 
-                            </button>
-                        </div>
-                        <div class="plant-card">
-                            <img src="assets/images/selling2.png" alt="Artificial Plants">
-                            <h3>Artificial Plants</h3>
-                            <p class="price">₱ 900.00</p>
-                            <button class="add-to-cart">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M11 27C11.5523 27 12 26.5523 12 26C12 25.4477 11.5523 25 11 25C10.4477 25 10 25.4477 10 26C10 26.5523 10.4477 27 11 27Z"
-                                        stroke="black" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M25 27C25.5523 27 26 26.5523 26 26C26 25.4477 25.5523 25 25 25C24.4477 25 24 25.4477 24 26C24 26.5523 24.4477 27 25 27Z"
-                                        stroke="black" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M3 5H7L10 22H26" stroke="black" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M10 16.666H25.59C25.7056 16.6661 25.8177 16.6261 25.9072 16.5528C25.9966 16.4795 26.0579 16.3775 26.0806 16.2641L27.8806 7.26414C27.8951 7.19157 27.8934 7.11668 27.8755 7.04487C27.8575 6.97307 27.8239 6.90614 27.7769 6.84891C27.73 6.79169 27.6709 6.7456 27.604 6.71397C27.5371 6.68234 27.464 6.66596 27.39 6.66602H8"
-                                        stroke="black" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
+                                </button>
+                            </div>
+                            <div class="plant-card">
+                                <img src="assets/images/selling2.png" alt="Artificial Plants">
+                                <h3>Artificial Plants</h3>
+                                <p class="price">₱ 900.00</p>
+                                <button class="add-to-cart">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11 27C11.5523 27 12 26.5523 12 26C12 25.4477 11.5523 25 11 25C10.4477 25 10 25.4477 10 26C10 26.5523 10.4477 27 11 27Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M25 27C25.5523 27 26 26.5523 26 26C26 25.4477 25.5523 25 25 25C24.4477 25 24 25.4477 24 26C24 26.5523 24.4477 27 25 27Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M3 5H7L10 22H26" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M10 16.666H25.59C25.7056 16.6661 25.8177 16.6261 25.9072 16.5528C25.9966 16.4795 26.0579 16.3775 26.0806 16.2641L27.8806 7.26414C27.8951 7.19157 27.8934 7.11668 27.8755 7.04487C27.8575 6.97307 27.8239 6.90614 27.7769 6.84891C27.73 6.79169 27.6709 6.7456 27.604 6.71397C27.5371 6.68234 27.464 6.66596 27.39 6.66602H8"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
 
-                            </button>
+                                </button>
+                            </div>
+                            <div class="plant-card">
+                                <img src="assets/images/selling3.png" alt="Artificial Plants">
+                                <h3>Premium Artificial Plants</h3>
+                                <p class="price">₱ 3,500.00</p>
+                                <button class="add-to-cart">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11 27C11.5523 27 12 26.5523 12 26C12 25.4477 11.5523 25 11 25C10.4477 25 10 25.4477 10 26C10 26.5523 10.4477 27 11 27Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M25 27C25.5523 27 26 26.5523 26 26C26 25.4477 25.5523 25 25 25C24.4477 25 24 25.4477 24 26C24 26.5523 24.4477 27 25 27Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M3 5H7L10 22H26" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M10 16.666H25.59C25.7056 16.6661 25.8177 16.6261 25.9072 16.5528C25.9966 16.4795 26.0579 16.3775 26.0806 16.2641L27.8806 7.26414C27.8951 7.19157 27.8934 7.11668 27.8755 7.04487C27.8575 6.97307 27.8239 6.90614 27.7769 6.84891C27.73 6.79169 27.6709 6.7456 27.604 6.71397C27.5371 6.68234 27.464 6.66596 27.39 6.66602H8"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
-                        <div class="plant-card">
-                            <img src="assets/images/selling3.png" alt="Artificial Plants">
-                            <h3>Artificial Plants</h3>
-                            <p class="price">₱ 3,500.00</p>
-                            <button class="add-to-cart">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M11 27C11.5523 27 12 26.5523 12 26C12 25.4477 11.5523 25 11 25C10.4477 25 10 25.4477 10 26C10 26.5523 10.4477 27 11 27Z"
-                                        stroke="black" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M25 27C25.5523 27 26 26.5523 26 26C26 25.4477 25.5523 25 25 25C24.4477 25 24 25.4477 24 26C24 26.5523 24.4477 27 25 27Z"
-                                        stroke="black" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M3 5H7L10 22H26" stroke="black" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M10 16.666H25.59C25.7056 16.6661 25.8177 16.6261 25.9072 16.5528C25.9966 16.4795 26.0579 16.3775 26.0806 16.2641L27.8806 7.26414C27.8951 7.19157 27.8934 7.11668 27.8755 7.04487C27.8575 6.97307 27.8239 6.90614 27.7769 6.84891C27.73 6.79169 27.6709 6.7456 27.604 6.71397C27.5371 6.68234 27.464 6.66596 27.39 6.66602H8"
-                                        stroke="black" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </button>
+
+                        <!-- Group 2 -->
+                        <div class="plants-group">
+                            <div class="plant-card">
+                                <img src="assets/images/selling4.png" alt="Monstera Plants">
+                                <h3>Monstera Plants</h3>
+                                <p class="price">₱ 2,200.00</p>
+                                <button class="add-to-cart">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11 27C11.5523 27 12 26.5523 12 26C12 25.4477 11.5523 25 11 25C10.4477 25 10 25.4477 10 26C10 26.5523 10.4477 27 11 27Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M25 27C25.5523 27 26 26.5523 26 26C26 25.4477 25.5523 25 25 25C24.4477 25 24 25.4477 24 26C24 26.5523 24.4477 27 25 27Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M3 5H7L10 22H26" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M10 16.666H25.59C25.7056 16.6661 25.8177 16.6261 25.9072 16.5528C25.9966 16.4795 26.0579 16.3775 26.0806 16.2641L27.8806 7.26414C27.8951 7.19157 27.8934 7.11668 27.8755 7.04487C27.8575 6.97307 27.8239 6.90614 27.7769 6.84891C27.73 6.79169 27.6709 6.7456 27.604 6.71397C27.5371 6.68234 27.464 6.66596 27.39 6.66602H8"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="plant-card">
+                                <img src="assets/images/selling6.png" alt="Snake Plants">
+                                <h3>Snake Plants</h3>
+                                <p class="price">₱ 1,200.00</p>
+                                <button class="add-to-cart">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11 27C11.5523 27 12 26.5523 12 26C12 25.4477 11.5523 25 11 25C10.4477 25 10 25.4477 10 26C10 26.5523 10.4477 27 11 27Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M25 27C25.5523 27 26 26.5523 26 26C26 25.4477 25.5523 25 25 25C24.4477 25 24 25.4477 24 26C24 26.5523 24.4477 27 25 27Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M3 5H7L10 22H26" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M10 16.666H25.59C25.7056 16.6661 25.8177 16.6261 25.9072 16.5528C25.9966 16.4795 26.0579 16.3775 26.0806 16.2641L27.8806 7.26414C27.8951 7.19157 27.8934 7.11668 27.8755 7.04487C27.8575 6.97307 27.8239 6.90614 27.7769 6.84891C27.73 6.79169 27.6709 6.7456 27.604 6.71397C27.5371 6.68234 27.464 6.66596 27.39 6.66602H8"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="plant-card">
+                                <img src="assets/images/selling5.png" alt="Fiddle Leaf Plants">
+                                <h3>Fiddle Leaf Plants</h3>
+                                <p class="price">₱ 1,800.00</p>
+                                <button class="add-to-cart">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11 27C11.5523 27 12 26.5523 12 26C12 25.4477 11.5523 25 11 25C10.4477 25 10 25.4477 10 26C10 26.5523 10.4477 27 11 27Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M25 27C25.5523 27 26 26.5523 26 26C26 25.4477 25.5523 25 25 25C24.4477 25 24 25.4477 24 26C24 26.5523 24.4477 27 25 27Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M3 5H7L10 22H26" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M10 16.666H25.59C25.7056 16.6661 25.8177 16.6261 25.9072 16.5528C25.9966 16.4795 26.0579 16.3775 26.0806 16.2641L27.8806 7.26414C27.8951 7.19157 27.8934 7.11668 27.8755 7.04487C27.8575 6.97307 27.8239 6.90614 27.7769 6.84891C27.73 6.79169 27.6709 6.7456 27.604 6.71397C27.5371 6.68234 27.464 6.66596 27.39 6.66602H8"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <!-- Group 3 -->
+                        <div class="plants-group">
+                            <div class="plant-card">
+                                <img src="assets/images/selling7.png" alt="Rubber Plants">
+                                <h3>Rubber Plants</h3>
+                                <p class="price">₱ 1,600.00</p>
+                                <button class="add-to-cart">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11 27C11.5523 27 12 26.5523 12 26C12 25.4477 11.5523 25 11 25C10.4477 25 10 25.4477 10 26C10 26.5523 10.4477 27 11 27Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M25 27C25.5523 27 26 26.5523 26 26C26 25.4477 25.5523 25 25 25C24.4477 25 24 25.4477 24 26C24 26.5523 24.4477 27 25 27Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M3 5H7L10 22H26" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M10 16.666H25.59C25.7056 16.6661 25.8177 16.6261 25.9072 16.5528C25.9966 16.4795 26.0579 16.3775 26.0806 16.2641L27.8806 7.26414C27.8951 7.19157 27.8934 7.11668 27.8755 7.04487C27.8575 6.97307 27.8239 6.90614 27.7769 6.84891C27.73 6.79169 27.6709 6.7456 27.604 6.71397C27.5371 6.68234 27.464 6.66596 27.39 6.66602H8"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="plant-card">
+                                <img src="assets/images/selling8.png" alt="Peace Lily Plants">
+                                <h3>Peace Lily Plants</h3>
+                                <p class="price">₱ 1,100.00</p>
+                                <button class="add-to-cart">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11 27C11.5523 27 12 26.5523 12 26C12 25.4477 11.5523 25 11 25C10.4477 25 10 25.4477 10 26C10 26.5523 10.4477 27 11 27Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M25 27C25.5523 27 26 26.5523 26 26C26 25.4477 25.5523 25 25 25C24.4477 25 24 25.4477 24 26C24 26.5523 24.4477 27 25 27Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M3 5H7L10 22H26" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M10 16.666H25.59C25.7056 16.6661 25.8177 16.6261 25.9072 16.5528C25.9966 16.4795 26.0579 16.3775 26.0806 16.2641L27.8806 7.26414C27.8951 7.19157 27.8934 7.11668 27.8755 7.04487C27.8575 6.97307 27.8239 6.90614 27.7769 6.84891C27.73 6.79169 27.6709 6.7456 27.604 6.71397C27.5371 6.68234 27.464 6.66596 27.39 6.66602H8"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="plant-card">
+                                <img src="assets/images/selling9.png" alt="Bamboo Plants">
+                                <h3>Bamboo Plants</h3>
+                                <p class="price">₱ 800.00</p>
+                                <button class="add-to-cart">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11 27C11.5523 27 12 26.5523 12 26C12 25.4477 11.5523 25 11 25C10.4477 25 10 25.4477 10 26C10 26.5523 10.4477 27 11 27Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M25 27C25.5523 27 26 26.5523 26 26C26 25.4477 25.5523 25 25 25C24.4477 25 24 25.4477 24 26C24 26.5523 24.4477 27 25 27Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M3 5H7L10 22H26" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M10 16.666H25.59C25.7056 16.6661 25.8177 16.6261 25.9072 16.5528C25.9966 16.4795 26.0579 16.3775 26.0806 16.2641L27.8806 7.26414C27.8951 7.19157 27.8934 7.11668 27.8755 7.04487C27.8575 6.97307 27.8239 6.90614 27.7769 6.84891C27.73 6.79169 27.6709 6.7456 27.604 6.71397C27.5371 6.68234 27.464 6.66596 27.39 6.66602H8"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -252,7 +408,7 @@
                     <button class="explore-btn"> Explore →</button>
                 </div>
             </div>
-            
+
             <div class="category-item category-right">
                 <img src="assets/images/categories3.png" alt="">
                 <div class="category-overlay">
@@ -269,7 +425,7 @@
             </div>
             <div class="testimonials-wrapper">
                 <button class="slide-btn-prev">
-                    <</button>
+                    << /button>
                         <div class="testimonials-slider">
                             <div class="testimonials-content">
                                 <div class="testimonials-card active">
