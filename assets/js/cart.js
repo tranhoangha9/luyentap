@@ -31,40 +31,6 @@ document.addEventListener('DOMContentLoaded', function(){
     loadCart();
     updateOrderSummary();
 });
-
-
-document.querySelectorAll('.qty-btn').forEach(button => {
-    button.addEventListener('click', function(){
-        const qtyNumber = this.parentNode.querySelector('.qty-number');
-        let qty = parseInt(qtyNumber.textContent);
-
-        if(this.classList.contains('plus')){
-            qty++;
-        } else if(qty > 1){
-            qty--;
-        }
-        qtyNumber.textContent = qty;
-        
-        const cartItem = this.closest('.cart-item');
-        const price = cartItem.querySelector('.item-price .price').textContent;
-        const unitPrice = parseFloat(price.replace('$',''));
-        cartItem.querySelector('.item-total .total').textContent = `$${(unitPrice * qty).toFixed(2) }`;
-
-        updateOrderSummary();
-    });
-});
-
-document.querySelectorAll('.remove-btn').forEach(button => {
-    button.addEventListener('click', function(){
-        const cartItem = this.closest('.cart-item');
-        const productName = cartItem.querySelector('.item-details h4').textContent;
-        cartItem.remove();
-        removeFromLocalStorage(productName);
-        updateOrderSummary();
-    });
-});
-
-
 function removeFromLocalStorage(productName) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     cart = cart.filter(item => item.name !== productName);
